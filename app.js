@@ -21,6 +21,7 @@ app.get("/api/users/:id", userHandlers.getUserById);
 app.post("/api/users", userHandlers.postUser);
 app.post("/api/users/:id", userHandlers.getUserById);
 app.put("/api/users/:id", userHandlers.updateUser);
+app.delete("/api/users/:id", userHandlers.deleteUser);
 
 //movies
 
@@ -31,6 +32,7 @@ app.get("/api/movies/:id", movieHandlers.getMovieById);
 app.post("/api/movies", movieHandlers.postMovie);
 app.post("/api/movies/:id", movieHandlers.getMovieById);
 app.put("/api/movies/:id", movieHandlers.updateMovie);
+
 
 
 
